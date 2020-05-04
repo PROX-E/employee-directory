@@ -13,5 +13,19 @@ function Table() {
     const { displayedEmployees} = useContext(EmployeeContext)
 
     
+    return (
+        <table>
+            <thead>
+                <tr>
+                    <td onClick={() => sortFunc("name")}><Button>First Name</Button></td>
+                    <td>Last Name</td>
+                    <td>UID</td>
+                    <td>Gender</td>
+                    <td>E-mail</td>
+                    <td onClick={() => sortFunc("age")}><Button>Age</Button></td>
+                </tr>
+            </thead>
+        </table>
+    )
 }
 export default Table;
