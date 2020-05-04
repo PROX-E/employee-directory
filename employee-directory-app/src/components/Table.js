@@ -25,6 +25,21 @@ function Table() {
                     <td onClick={() => sortFunc("age")}><Button>Age</Button></td>
                 </tr>
             </thead>
+            <tbody>
+                {displayedEmployees.map(employee => {
+                    return (
+                        <tr key={employee.login.uuid}>
+                            <td>{employee.name.first}</td>
+                            <td>{employee.name.last}</td>
+                            <td>{employee.login.uuid}</td>
+                            <td>{employee.gender}</td>
+                            <td>{employee.email}</td>
+                            <td>{employee.dob.age}</td>
+                        </tr>
+                    )
+                }
+                )}
+            </tbody>
         </table>
     )
 }
