@@ -11,7 +11,14 @@ function Search(){
         const searchTerm = target.value
         // used for updating the value in the search input, so it always equals exactly what is saved in state
         setSearch(searchTerm)
-        
+        // filters the employees based on the text that is entered in the search input
+        const filterResult = employees.filter(function(employee){
+            // Looks at every employee first name, makes the name lowercase, 
+            // then if the first name contains the current search: display 
+            // if not remove it from the list.
+            return employee.name.first.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1 ? true : false
+        })
+        setDisplayedEmployees([...filterResult])
     }
     // every letter entered triggers the onChange event.
     return(
