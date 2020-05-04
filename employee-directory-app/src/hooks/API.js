@@ -49,4 +49,14 @@ export function useGet(url){
     // Spread employees for react.
     setDisplayedEmployees([...employees])
     }
+    
+    // sorts employees by age.
+    function sortByAge(){
+        employees.sort(function(a,b){
+            return (a.dob.age - b.dob.age)
+        })
+        setDisplayedEmployees([...employees])
+    }
+
+    return {displayedEmployees, sortFunc}
 }
