@@ -23,4 +23,19 @@ export function useGet(url){
         }
         getEmployees()
     },[])
+
+     // Sort function to trigger
+     function sortFunc(sort){
+        switch(sort){
+            case "name":
+                sortByName()
+                break
+            case "age":
+                sortByAge()
+                break
+            default:
+                console.log("sort does not match any cases")
+        }
+    }
+
 }
