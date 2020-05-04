@@ -1,8 +1,8 @@
         -- A Basic Employee Directory React app--
-   *Allows the user to quickly access Employee information and data
-   *Search by name, email, phone number, etc.
-   *Sorts Results by Name, (Aphabetically), 
-   *Sorts by Age, youngest to oldest.
+   1. Allows the user to quickly access Employee information and data
+   2. Search by name, email, phone number, etc.
+   3. Sorts Results by Name, (Aphabetically), 
+   4. Sorts by Age, youngest to oldest.
    
 This project impliments react to break down the parts of the application into components, 
 as well as manage component's states to react to user input.
