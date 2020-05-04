@@ -37,6 +37,7 @@ export function useGet(url){
                 console.log("sort does not match any cases")
         }
     }
+    
     // sorts employees by first name.
     function sortByName(){
         employees.sort(function(a,b){
