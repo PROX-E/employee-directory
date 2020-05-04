@@ -10,9 +10,12 @@
     -- Application summary --
 <br>
 This project impliments react to break down the parts of the application into components,
-and manages the component's states to react to user input. <br>
+and manages the component's states to react to user input. 
 Axios is imported as a dependency for the project, allowing requests to a random user generating API.
 Using the component logic, and useEffect, the app displays the Information on the table dependent on the current
 search perameters being implimented on the displayed user data.
+
+<br>
+<br>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
