@@ -6,5 +6,9 @@ function Search(){
     const [search, setSearch] = useState("")
     const {employees, setDisplayedEmployees} = useContext(EmployeeContext)
     
+    // every letter entered triggers the onChange event.
+    return(
+       <input type="text" onChange= {updateSearch} value={search}></input>
+    )
 }
 export default Search;
