@@ -8,6 +8,7 @@ export function useGet(url){
     
     // get employees from the api, stores them in employees, and displayed employees. 
     // Only occurs once, and when component is mounted.
+    // eslint-disable-next-line
     useEffect(()=> {
         async function getEmployees(){
             try {
