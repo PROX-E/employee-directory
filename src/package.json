@@ -1,5 +1,6 @@
 {
-"name": "employee-directory",
+  "name": "employee-directory",
+  "main": "server.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
